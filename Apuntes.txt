@@ -1,0 +1,23 @@
+Se importo para la libreria de  animaciones el siguiente comando: npm install react-native-reanimated
+esta instalacion es lo que le da la animacion a  los scroll
+
+2. en el documento babel.config se debe generar un codigo con la sigueinte dependencia plugins:['react-native-reanimated/plugin']
+la cual nos dara todos los elementos que usuaremos para poder usar las animaciones
+
+3. se instala Skia que es una libreria para graficos 2D que es un motor de renderizado de bajo nivel 
+npm install @shopify/react-native-skia
+
+
+
+
+
+
+
+
+Apuntes adiciones cuando el puerto no quiera ejecutar se debe colocar le siguiente comando en el simbolo del sistema
+netstat -aon | findstr :8081
+seguido de esto nos dara una lista donde aparecera que este se estaejecuntado pero nos aparece un error se debe colocar 
+taskkill /F /PID <PID>
+para finalizar se debe usar el siguiente comando en el terminal de visual 
+npx react-native start
+ya una vez realizado esto ya correra el emulador 
