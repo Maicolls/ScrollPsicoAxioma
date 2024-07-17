@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text, Share } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import React from 'react'
 import { OnboardingData } from '../Data/data';
 import { SharedValue } from 'react-native-reanimated';
@@ -21,10 +21,11 @@ const Pagination = ({data, buttonVal}: Props) => {
 
 export default Pagination;
 
+{/*Este es el css que se le da a los botones que se le dan a la paginacion de los scroll */}
 const styles = StyleSheet.create({
     PaginationContainer: {
-        position: 'absolute',
-        bottom: 70,
+        bottom: 60,
         flexDirection: 'row',
+        position: 'absolute',
     },
 });

@@ -5,7 +5,7 @@ import {
   View,
   useWindowDimensions,
 } from 'react-native';
-import React, {useRef, useState} from 'react';
+import React, { useRef, useState } from 'react';
 import data from './src/Data/data';
 import RenderItem from './src/Components/RenderItem';
 import CustomButton from './src/Components/CustomButton';
@@ -18,12 +18,13 @@ import {
   SkImage,
   makeImageFromView,
 } from '@shopify/react-native-skia';
-import {useSharedValue, withTiming} from 'react-native-reanimated';
+import { useSharedValue, withTiming } from 'react-native-reanimated';
 import Pagination from './src/Components/Pagination';
+
 
 const App = () => {
   const pd = PixelRatio.get();
-  const {width: SCREEN_WIDTH, height: SCREEN_HEIGHT} = useWindowDimensions();
+  const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = useWindowDimensions();
   const ref = useRef(null);
   const [active, setActive] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,6 +38,7 @@ const App = () => {
   const handlePress = async () => {
     if (currentIndex === data.length - 1 && !active) {
       console.log('Accion Final');
+      
       return;
     }
     if (!active) {
@@ -47,7 +49,7 @@ const App = () => {
       await wait(80);
 
       setCurrentIndex(prev => prev + 1);
-      mask.value = withTiming(SCREEN_HEIGHT, {duration: 1000});
+      mask.value = withTiming(SCREEN_HEIGHT, { duration: 1000 });
       buttonVal.value = withTiming(buttonVal.value + SCREEN_HEIGHT);
       await wait(1000);
 
@@ -97,21 +99,27 @@ const App = () => {
       )}
       <CustomButton handlerPress={handlePress} buttonVal={buttonVal} />
       <Pagination data={data} buttonVal={buttonVal} />
-      <Text style={styles.credit}>By: TypeByte</Text>
+      <Text style={styles.credit}>© TypeByte Ⓡ 2024</Text>
     </View>
   );
 };
 
 export default App;
 
+
+ {/* Este es el css que se le da a los botones que se le dan a la paginacion de los scroll 
+  el container es el contenedor de la paginacion el color del mismo
+  el credit es para el footer*/}
+
 const styles = StyleSheet.create({
-  container: {
+  container: { 
+    alignItems: 'center', 
     flex: 1,
-    alignItems: 'center',
   },
   credit: {
+    bottom: 12,
+    color: 'white', 
     position: 'absolute',
-    bottom: 22,
-    color: 'white',
+    fontSize: 14,
   },
 });

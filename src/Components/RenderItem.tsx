@@ -31,15 +31,15 @@ export default RenderItem;
 
 const styles = StyleSheet.create({
   itemContainer: {
-    flex: 1,
     alignItems: 'center',
+    flex: 1,
     paddingTop: 10,
   },
   itemText: {
-    marginTop: 10,
-    textAlign: 'center',
     fontSize: 30,
     fontWeight: 'bold',
     marginHorizontal: 30,
+    marginTop: 10,
+    textAlign: 'center',
   },
 });

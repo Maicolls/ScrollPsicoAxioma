@@ -1,8 +1,5 @@
 import { StyleSheet, 
     TouchableWithoutFeedback, 
-    Text, 
-    View, 
-    Image,
     useWindowDimensions
 } from 'react-native'
 import React from 'react'
@@ -13,7 +10,7 @@ import Animated,{
     withSpring,
     withTiming,
   } from 'react-native-reanimated';
-/* import { interpolateColor, SharedValue, useAnimatedStyle } from 'react-native-reanimated'; */
+/*  import { interpolateColor, SharedValue, useAnimatedStyle } from 'react-native-reanimated';  */
 
 
 
@@ -105,19 +102,19 @@ export default CustomButton
 
 const styles = StyleSheet.create({
     container: {
-        position: 'absolute',
-        zIndex: 1,
-        bottom: 80,
-        width: 120,
-        height: 120,
-        backgroundColor: 'white',
-        justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: 'white', 
         borderRadius: 100,
+        bottom: 68,
+        height: 120,
+        justifyContent: 'center',
+        position: 'absolute',
+        width: 120,
+        zIndex: 1,
     },
     textButton: {
-        color: 'black',
-        fontSize: 20,
+        color: 'black', 
+        fontSize: 30,
         position: 'absolute',
     },
 })

@@ -1,4 +1,4 @@
-import { Share, StyleSheet, Text, useWindowDimensions, View } from 'react-native'
+import { StyleSheet, useWindowDimensions } from 'react-native'
 import React from 'react'
 import Animated, { interpolate, interpolateColor, SharedValue, useAnimatedStyle } from 'react-native-reanimated';
 import { Extrapolate } from '@shopify/react-native-skia';
@@ -60,11 +60,11 @@ export default Dot
 
 const styles = StyleSheet.create({
     dot: {
-        height: 10,
-        width: 12,
-        backgroundColor: 'black',
-        marginHorizontal: 5,
+        backgroundColor: 'black', 
         borderRadius: 5,
         bottom: -10,
+        height: 10,
+        marginHorizontal: 5,
+        width: 12,
     },
 });
