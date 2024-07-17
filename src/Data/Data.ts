@@ -30,13 +30,13 @@ const data: OnboardingData[] = [
     textColor: 'black',
     backgroundColor: '#f8dac2',
   },
-  {
+ {
     id: 4,
     image: require('../images/Flechitauwu.png'),
     text: 'pa comer fresas con crema pa alla papu',
     textColor: 'black',
     backgroundColor: '#f8dac2',
-  },
+  }, 
 ];
 
 export default data;
