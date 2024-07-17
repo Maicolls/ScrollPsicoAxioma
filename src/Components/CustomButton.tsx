@@ -27,8 +27,8 @@ const CustomButton = ({handlerPress, buttonVal}: Props) => {
     const animatedColor= useAnimatedStyle(() => {
         const backgroundColor = interpolateColor(
             buttonVal.value,
-            [0,SCREEN_HEIGHT, 2 * SCREEN_HEIGHT],
-            ['#fs94b2', '#f8dac2', '#154f40']
+            [0,SCREEN_HEIGHT, 3 * SCREEN_HEIGHT],
+            ['#fd94b2', '#f8dac2', '#154f40','#F4340B'] /*Aqui se le da el color al boton de scroll */
         );
         return {
             backgroundColor: backgroundColor,
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     container: {
         position: 'absolute',
         zIndex: 1,
-        bottom: 40,
+        bottom: 80,
         width: 120,
         height: 120,
         backgroundColor: 'white',

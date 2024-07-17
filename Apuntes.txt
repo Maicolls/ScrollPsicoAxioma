@@ -7,7 +7,8 @@ la cual nos dara todos los elementos que usuaremos para poder usar las animacion
 3. se instala Skia que es una libreria para graficos 2D que es un motor de renderizado de bajo nivel 
 npm install @shopify/react-native-skia
 
-
+npm install @react-navigation/native
+npm install react-native-screens react-native-safe-area-context
 
 
 
