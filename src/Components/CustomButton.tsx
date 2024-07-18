@@ -32,7 +32,8 @@ const CustomButton = ({handlerPress, buttonVal}: Props) => {
         };
     });
 
-    const buttonAnimationStyle = useAnimatedStyle(() => { /*Animacion que se le da al boton de scroll para que  este cambie posicionamiento */
+    const buttonAnimationStyle = useAnimatedStyle(() => {/*Animacion que se le da al boton de scroll para que  este cambie
+         posicionamiento */
         return{
             width:
             buttonVal.value === 3 * SCREEN_HEIGHT 
@@ -87,9 +88,8 @@ const CustomButton = ({handlerPress, buttonVal}: Props) => {
         <Animated.View style={[styles.container, animatedColor, buttonAnimationStyle]}>
            
             <Animated.Text style={[styles.textButton, textAnimationStyle]}>
-                NextBitch
+                Comencemos !!!
                 </Animated.Text>
-           
             <Animated.Image  
             style={arrowAnimationStyle}
             source={require('../images/Flechitauwu.png')} />
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     },
     textButton: {
         color: 'black', 
-        fontSize: 30,
+        fontSize: 25,
         position: 'absolute',
     },
 })
