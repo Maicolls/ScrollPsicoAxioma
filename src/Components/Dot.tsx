@@ -45,7 +45,7 @@ const Dot = ({index, buttonVal}: Props) => {
         const backgroundColor = interpolateColor(
             buttonVal.value,
             [0,SCREEN_HEIGHT, 3 * SCREEN_HEIGHT],
-            ['#fd94b2', '#f8dac2', '#154f40', '#F4340B']
+            ['#fd94b2', '#f8dac2', '#154f40', '#F4340B']//Se cambian los colores de la paginacion que se da con el cursor del boton de scroll 
         );
         return {
             backgroundColor: backgroundColor,

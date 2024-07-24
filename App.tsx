@@ -21,7 +21,6 @@ import {
 import { useSharedValue, withTiming } from 'react-native-reanimated';
 import Pagination from './src/Components/Pagination';
 
-
 const App = () => {
   const pd = PixelRatio.get();
   const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = useWindowDimensions();
@@ -32,13 +31,13 @@ const App = () => {
   const mask = useSharedValue(0);
   const buttonVal = useSharedValue(0);
 
+;
   const wait = async (ms: number) =>
     new Promise(resolve => setTimeout(resolve, ms));
 
   const handlePress = async () => {
     if (currentIndex === data.length - 1 && !active) {
       console.log('Accion Final');
-      
       return;
     }
     if (!active) {

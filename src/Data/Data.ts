@@ -19,14 +19,14 @@ const data: OnboardingData[] = [
     image: require('../images/icono-llamada.png'),
     text: 'Bienvenido a PsicoAxioma',
     textColor: '#f8dac2',
-    backgroundColor: '#154f40',
+    backgroundColor: '#6750A4', //Aca se le pude modificar los colores a cada componente de las paginas 
   },
   {
     id: 2,
     image: require('../images/icono-llamada.png'),
     text: 'Encontras las lineas de ayuda en salud mental',
     textColor: '#154f40',
-    backgroundColor: '#fd94b2',
+    backgroundColor: '#031222',
   },
   {
     id: 3,
